@@ -1,0 +1,3 @@
+a=int(raw_input())
+lis=list(map(int,raw_input().strip().split()))
+print max(filter(lambda x: x != max(lis), lis))
