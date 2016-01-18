@@ -1,0 +1,35 @@
+
+def main():
+    
+  
+  
+    num_array = []
+  
+    print " "
+    n=int(raw_input("enter the size of array   "))
+    for i in range(n):
+        num_array.append( int( raw_input("enter number   ")))
+        print " "
+     
+    print num_array
+        
+        
+
+    for i in range(n):
+        temp=num_array[i]
+        j=i-1
+        while temp<+num_array[j] and j>=0:
+            num_array[j+1]=num_array[j]
+            j=j-1
+        num_array[j+1]=temp
+    
+
+                
+    print("sorted array is")            
+    for i in num_array:
+        print i            
+                
+        
+    
+if __name__ == "__main__":
+    main()
